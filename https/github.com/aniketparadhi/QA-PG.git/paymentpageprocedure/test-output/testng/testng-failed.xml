@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [testng]">
+  <test thread-count="5" name="testng(failed)">
+    <classes>
+      <class name="paymentpageprocedure.DefaultReport">
+        <methods>
+          <include name="skipTest"/>
+          <include name="failTest"/>
+        </methods>
+      </class> <!-- paymentpageprocedure.DefaultReport -->
+      <class name="paymentpageprocedure.netbank">
+        <methods>
+          <include name="netbanks"/>
+          <include name="formfilling"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- paymentpageprocedure.netbank -->
+    </classes>
+  </test> <!-- testng(failed) -->
+</suite> <!-- Failed suite [testng] -->
